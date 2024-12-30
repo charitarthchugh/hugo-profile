@@ -16,8 +16,8 @@
                             {{ end }}
                         </div>
                         <h5 class="card-title bg-transparent mt-1">{{ .title }}</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            {{ .content }}
+                        <div class="py-1 card-text bg-transparent secondary-font">
+                            {{ .content | markdownify }}
                         </div>
                     </div>
                     {{ if or (.links) (.featured) }}
